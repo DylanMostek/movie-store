@@ -1,0 +1,78 @@
+CREATE TABLE Users (
+    IsAdmin BIT DEFAULT 0,
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(50) UNIQUE NOT NULL,
+    PassHash NVARCHAR(255) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NULL,
+    FirstName NVARCHAR(50) NULL,
+    LastName NVARCHAR(50) NULL,
+    RegisDate DATETIME DEFAULT GETDATE(),
+    ShipAddress NVARCHAR(255) NULL,
+    PaymentInfo NVARCHAR(255) NULL
+);
+
+CREATE TABLE Actors (
+    ActorID INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Movies (
+    MovieID INT PRIMARY KEY IDENTITY(1,1),
+    Title NVARCHAR(255) NOT NULL,
+    Description TEXT NULL,
+    ReleaseDate DATE NULL,
+    Director NVARCHAR(100) NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    Ratings DECIMAL(5, 1) NULL,
+    ImageURL VARCHAR(255) NULL
+);
+
+CREATE TABLE Genres (
+    GenreID INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(50) UNIQUE NOT NULL
+);
+
+
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    OrderDate DATETIME DEFAULT GETDATE(),
+    ShipAddress VARCHAR(255) NOT NULL,
+    TotalAmount DECIMAL(10, 2) NOT NULL,
+    PromoCodeUsed VARCHAR(50) NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+CREATE TABLE PromoCodes (
+    PromoCodeID INT PRIMARY KEY IDENTITY(1,1),
+    Code VARCHAR(50) UNIQUE NOT NULL,
+    DiscountPerctage DECIMAL(5, 2) NULL,
+    ExpDate DATE NULL,
+    IsActive BIT DEFAULT 0
+);
+
+CREATE TABLE OrderItems (
+    OrderItemID INT PRIMARY KEY IDENTITY(1,1),
+    OrderID INT NOT NULL,
+    MovieID INT NOT NULL,
+    Quant INT NOT NULL DEFAULT 1,
+    PriceAtPurch DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID)
+);
+
+CREATE TABLE ShoppingCarts (
+    CartID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT UNIQUE NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+CREATE TABLE ShoppingCartItems (
+    CartItemID INT PRIMARY KEY IDENTITY(1,1),
+    CartID INT NOT NULL,
+    MovieID INT NOT NULL,
+    Quant INT NOT NULL DEFAULT 1,
+    FOREIGN KEY (CartID) REFERENCES ShoppingCarts(CartID),
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID)
+);
