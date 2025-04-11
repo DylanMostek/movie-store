@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moham\\OneDrive\\Desktop\\SoftGroup16\\MovieShopAppJs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{687F396C-997E-453D-B59E-023C7C0F2ABB}|MovieShopAppJs.Server\\MovieShopAppJs.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16\\movieshopappjs\\movieshopappjs.server\\movieshopappjs.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{687F396C-997E-453D-B59E-023C7C0F2ABB}|MovieShopAppJs.Server\\MovieShopAppJs.Server.csproj|solutionrelative:movieshopappjs.server\\movieshopappjs.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03A889CB-2C85-499D-9516-E4AC4E43C2EC}|movieshopappjs.client\\movieshopappjs.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16\\movieshopappjs\\movieshopappjs.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03A889CB-2C85-499D-9516-E4AC4E43C2EC}|movieshopappjs.client\\movieshopappjs.client.esproj|solutionrelative:movieshopappjs.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovieShopAppJs.Server",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\SoftGroup16\\MovieShopAppJs\\MovieShopAppJs.Server\\MovieShopAppJs.Server.csproj",
+              "RelativeDocumentMoniker": "MovieShopAppJs.Server\\MovieShopAppJs.Server.csproj",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\SoftGroup16\\MovieShopAppJs\\MovieShopAppJs.Server\\MovieShopAppJs.Server.csproj",
+              "RelativeToolTip": "MovieShopAppJs.Server\\MovieShopAppJs.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-11T16:53:16.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\SoftGroup16\\MovieShopAppJs\\movieshopappjs.client\\index.html",
+              "RelativeDocumentMoniker": "movieshopappjs.client\\index.html",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\SoftGroup16\\MovieShopAppJs\\movieshopappjs.client\\index.html",
+              "RelativeToolTip": "movieshopappjs.client\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-11T16:52:58.97Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
