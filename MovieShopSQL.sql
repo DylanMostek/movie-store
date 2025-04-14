@@ -45,7 +45,7 @@ CREATE TABLE Orders (
 CREATE TABLE PromoCodes (
     PromoCodeID INT PRIMARY KEY IDENTITY(1,1),
     Code VARCHAR(50) UNIQUE NOT NULL,
-    DiscountPerctage DECIMAL(5, 2) NULL,
+    DiscountPercentage DECIMAL(5, 2) NULL,
     ExpDate DATE NULL,
     IsActive BIT DEFAULT 0
 );
