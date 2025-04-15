@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SpaRoot>..\movieshopapp.client</SpaRoot>
+		<SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+		<SpaProxyServerUrl>https://localhost:52357</SpaProxyServerUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SpaFiles Include="$(SpaRoot)\dist\**\*.*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="8.0.12" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.12" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.12">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.12" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+	
+
+	<ItemGroup>
+		<ProjectReference Include="..\movieshopapp.client\movieshopapp.client.esproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+
+	<Target Name="KillProcess" BeforeTargets="Build">
+		<Exec Command="powershell -Command &quot;Stop-Process -Name 'movieShopApp.Server' -Force -ErrorAction SilentlyContinue&quot;"
+			  Condition="'$(OS)' == 'Windows_NT'"
+			  ContinueOnError="true" />
+		<Message Text="Attempted to stop movieShopApp.Server process." Importance="High" />
+	</Target>
+
+<Target Name="CleanClientDist">
+    <RemoveDir Directories="$(SpaRoot)dist" Condition="Exists('$(SpaRoot)dist')" />
+</Target>
+<Target Name="BuildClient" AfterTargets="CleanClientDist" BeforeTargets="Build">
+    <Message Text="SpaRoot path: $(SpaRoot)" Importance="High" />
+    <Message Text="Checking for dist at: $(SpaRoot)dist" Importance="High" />
+    <Exec Command="npm run build" WorkingDirectory="$(SpaRoot)" ConsoleToMSBuild="true" Condition="'$(OS)' == 'Windows_NT'" />
+    <Exec Command="npm run build" WorkingDirectory="$(SpaRoot)" ConsoleToMSBuild="true" Condition="'$(OS)' != 'Windows_NT'" />
+    
+    <Exec Command="ping 127.0.0.1 -n 3 > nul" Condition="'$(OS)' == 'Windows_NT'" />
+    <Exec Command="sleep 2" Condition="'$(OS)' != 'Windows_NT'" />
+    
+    <ItemGroup>
+        <SpaFiles Include="$(SpaRoot)dist\**"/>
+    </ItemGroup>
+</Target>
+
+<Target Name="CopyClientFiles" AfterTargets="BuildClient">
+    <MakeDir Directories="$(ProjectDir)wwwroot" />
+    <RemoveDir Directories="$(ProjectDir)wwwroot" Condition="Exists('$(ProjectDir)wwwroot')" />
+    <MakeDir Directories="$(ProjectDir)wwwroot" />
+    <Copy SourceFiles="@(SpaFiles)" DestinationFolder="$(ProjectDir)wwwroot\%(RecursiveDir)" Condition="@(SpaFiles->Count()) > 0" />
+    <Error Condition="!Exists('$(ProjectDir)wwwroot\index.html')" Text="Failed to copy React build output to wwwroot: index.html not found. Ensure the React build succeeded and generated the dist folder." />
+</Target>
+
+</Project>
