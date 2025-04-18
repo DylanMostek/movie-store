@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
+      "PackagePath": "staticwebassets\\assets\\HomePageImage-CYLRV0jS.png"
+    },
+    {
+      "Id": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-BFPBzbWf.js",
+      "PackagePath": "staticwebassets\\assets\\index-BFPBzbWf.js"
+    },
+    {
+      "Id": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-Cr1lBwEF.css",
+      "PackagePath": "staticwebassets\\assets\\index-Cr1lBwEF.css"
+    },
+    {
+      "Id": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\vite.svg",
+      "PackagePath": "staticwebassets\\vite.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.movieShopApp.Server.props",
+      "PackagePath": "build\\movieShopApp.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.movieShopApp.Server.props",
+      "PackagePath": "buildMultiTargeting\\movieShopApp.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.movieShopApp.Server.props",
+      "PackagePath": "buildTransitive\\movieShopApp.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.movieShopApp.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.movieShopApp.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

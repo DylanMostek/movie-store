@@ -1,0 +1,9 @@
+C:\Users\moham\OneDrive\Desktop\movieShopApp\movieShopApp.Server\wwwroot\assets\index-B8VJeBNG.css
+C:\Users\moham\OneDrive\Desktop\movieShopApp\movieShopApp.Server\wwwroot\vite.svg
+C:\Users\moham\OneDrive\Desktop\movieShopApp\movieShopApp.Server\wwwroot\assets\index-CUDeEUzo.js
+C:\Users\moham\OneDrive\Desktop\movieShopApp\movieShopApp.Server\wwwroot\index.html
+wwwroot\assets\HomePageImage-CYLRV0jS.png
+wwwroot\assets\index-B8VJeBNG.css
+wwwroot\assets\index-CUDeEUzo.js
+wwwroot\index.html
+wwwroot\vite.svg
