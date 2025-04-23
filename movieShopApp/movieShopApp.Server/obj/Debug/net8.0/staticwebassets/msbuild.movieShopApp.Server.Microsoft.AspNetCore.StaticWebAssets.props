@@ -18,41 +18,41 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\HomePageImage-CYLRV0jS.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-BFPBzbWf.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-Bn3iMibz.js'))">
       <SourceType>Package</SourceType>
       <SourceId>movieShopApp.Server</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/movieShopApp.Server</BasePath>
-      <RelativePath>assets/index-BFPBzbWf.js</RelativePath>
+      <RelativePath>assets/index-Bn3iMibz.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lw2gbzesv7</Fingerprint>
-      <Integrity>tal2zTi3bx81BtzF2pl7/NIrph0DEicg4VsaZnDzclw=</Integrity>
+      <Fingerprint>06ysj1x2nj</Fingerprint>
+      <Integrity>+MKWc11meJwZVVii1UhvyiaP8LAW7EspTUq6CZX7Oz0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-BFPBzbWf.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-Bn3iMibz.js'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-Cr1lBwEF.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-DB3FL-y2.css'))">
       <SourceType>Package</SourceType>
       <SourceId>movieShopApp.Server</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/movieShopApp.Server</BasePath>
-      <RelativePath>assets/index-Cr1lBwEF.css</RelativePath>
+      <RelativePath>assets/index-DB3FL-y2.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>72uy4vtsc1</Fingerprint>
-      <Integrity>r/wcYrmgsIdPTWPuCgLMefgFJQAbUOzLc9RgXDLrvNY=</Integrity>
+      <Fingerprint>tyxti57t0u</Fingerprint>
+      <Integrity>NYcWlfpQLYce62KQhTMhylXvvxeylEakF1dNpngFZC0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-Cr1lBwEF.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-DB3FL-y2.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
       <SourceType>Package</SourceType>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ncdaaqij3r</Fingerprint>
-      <Integrity>6cuGwnwMdFzN0LBWa7ln0U7zZ/pMYQRKOqfKlMsZzUs=</Integrity>
+      <Fingerprint>6krbovb68u</Fingerprint>
+      <Integrity>RoSkL6yazzxTih7mi3BOy40LdBmtqRJLbIR1PoC66lQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>

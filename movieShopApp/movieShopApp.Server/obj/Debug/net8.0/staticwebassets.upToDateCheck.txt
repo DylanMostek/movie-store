@@ -1,5 +1,5 @@
 wwwroot\assets\HomePageImage-CYLRV0jS.png
-wwwroot\assets\index-BFPBzbWf.js
-wwwroot\assets\index-Cr1lBwEF.css
+wwwroot\assets\index-Bn3iMibz.js
+wwwroot\assets\index-DB3FL-y2.css
 wwwroot\index.html
 wwwroot\vite.svg

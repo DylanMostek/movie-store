@@ -40,7 +40,7 @@ namespace movieShopApp.Server
                     options.Cookie.Name = ".AspNetCore.Identity.Application";
                     options.ExpireTimeSpan = TimeSpan.FromDays(7);
                     options.SlidingExpiration = true;
-                    options.Cookie.Path = "/"; 
+                    options.Cookie.Path = "/";
                 });
 
                 builder.Services.AddAuthorization();
@@ -137,7 +137,7 @@ namespace movieShopApp.Server
                                     Title = "The Dark Knight",
                                     Overview = "Batman raises the stakes in his war on crime.",
                                     ImageUrl = "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-                                    Genre = "Action",
+                                    Genre = "Action, Thriller",
                                     Rating = 5,
                                     DateReleased = new DateOnly(2008, 7, 18),
                                     Duration = 152,
@@ -145,7 +145,7 @@ namespace movieShopApp.Server
                                     BuyPrice = 14.99,
                                     TrailerUrl = "https://www.youtube.com/watch?v=EXeTwQWrcwY",
                                     Director = "Christopher Nolan",
-                                    Actor = "Christian Bale",
+                                    Actor = "Christian Bale, Heath Ledger",
                                     Language = "English"
                                 },
                                 new Movie
@@ -153,7 +153,7 @@ namespace movieShopApp.Server
                                     Title = "Inception",
                                     Overview = "A thief who steals corporate secrets through dream-sharing technology.",
                                     ImageUrl = "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
-                                    Genre = "Sci-Fi",
+                                    Genre = "Sci-Fi, Thriller",
                                     Rating = 5,
                                     DateReleased = new DateOnly(2010, 7, 16),
                                     Duration = 148,
@@ -161,7 +161,7 @@ namespace movieShopApp.Server
                                     BuyPrice = 14.99,
                                     TrailerUrl = "https://www.youtube.com/watch?v=YoHD9XEInc0",
                                     Director = "Christopher Nolan",
-                                    Actor = "Leonardo DiCaprio",
+                                    Actor = "Leonardo DiCaprio, Joseph Gordon-Levitt",
                                     Language = "English"
                                 },
                                 new Movie
@@ -169,7 +169,7 @@ namespace movieShopApp.Server
                                     Title = "Interstellar",
                                     Overview = "A team of explorers travel through a wormhole in space.",
                                     ImageUrl = "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-                                    Genre = "Sci-Fi",
+                                    Genre = "Sci-Fi, Drama",
                                     Rating = 5,
                                     DateReleased = new DateOnly(2014, 11, 7),
                                     Duration = 169,
@@ -177,7 +177,7 @@ namespace movieShopApp.Server
                                     BuyPrice = 14.99,
                                     TrailerUrl = "https://www.youtube.com/watch?v=zSWdZVtXT7E",
                                     Director = "Christopher Nolan",
-                                    Actor = "Matthew McConaughey",
+                                    Actor = "Matthew McConaughey, Anne Hathaway",
                                     Language = "English"
                                 }
                             };
@@ -221,6 +221,53 @@ namespace movieShopApp.Server
                     var email = user.FindFirstValue(ClaimTypes.Email);
                     var roles = user.FindAll(ClaimTypes.Role).Select(r => r.Value).ToList();
                     return Results.Json(new { Email = email, Roles = roles });
+                }).RequireAuthorization();
+
+                // add a new movie, only for Admin
+                app.MapPost("/api/movies", async (ApplicationDbContext dbContext, Movie movie, ClaimsPrincipal user) =>
+                {
+                    if (!user.IsInRole("Admin"))
+                    {
+                        return Results.Forbid();
+                    }
+
+                    if (string.IsNullOrEmpty(movie.Title) || string.IsNullOrEmpty(movie.Overview))
+                    {
+                        return Results.BadRequest("Title and Overview are required.");
+                    }
+
+                    if (movie.DateReleased == default)
+                    {
+                        return Results.BadRequest("DateReleased is required.");
+                    }
+
+                    if (movie.Rating < 1 || movie.Rating > 5)
+                    {
+                        return Results.BadRequest("Rating must be between 1 and 5.");
+                    }
+
+                    if (movie.Duration <= 0)
+                    {
+                        return Results.BadRequest("Duration must be greater than 0.");
+                    }
+
+                    if (movie.RentPrice < 0 || movie.BuyPrice < 0)
+                    {
+                        return Results.BadRequest("RentPrice and BuyPrice must be non-negative.");
+                    }
+
+                    movie.Genre = string.IsNullOrEmpty(movie.Genre) ? "" : string.Join(", ", movie.Genre.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(g => g.Trim()));
+                    movie.Director = string.IsNullOrEmpty(movie.Director) ? "" : string.Join(", ", movie.Director.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(d => d.Trim()));
+                    movie.Actor = string.IsNullOrEmpty(movie.Actor) ? "" : string.Join(", ", movie.Actor.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(a => a.Trim()));
+                    movie.Language = string.IsNullOrEmpty(movie.Language) ? "" : string.Join(", ", movie.Language.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(l => l.Trim()));
+
+                    movie.ImageUrl ??= "";
+                    movie.TrailerUrl ??= "";
+
+                    dbContext.Movies.Add(movie);
+                    await dbContext.SaveChangesAsync();
+
+                    return Results.Created($"/api/movies/{movie.Id}", movie);
                 }).RequireAuthorization();
 
                 if (app.Environment.IsDevelopment())
