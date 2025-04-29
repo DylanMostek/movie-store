@@ -125,7 +125,6 @@ function NavBar() {
                 
                 <ThemeToggle />
 
-                {/* User Actions */}
                 {isLoggedIn ? (
                     <div className="relative">
                         {/* Profile Circle */}

@@ -223,7 +223,14 @@ namespace movieShopApp.Server
                     return Results.Json(new { Email = email, Roles = roles });
                 }).RequireAuthorization();
 
-                // add a new movie, only for Admin
+                //  GET gets all the movies
+                app.MapGet("/api/movies", async (ApplicationDbContext dbContext) =>
+                {
+                    var movies = await dbContext.Movies.ToListAsync();
+                    return Results.Ok(movies);
+                });
+
+                //  GET adds a new movie (only by Admin)
                 app.MapPost("/api/movies", async (ApplicationDbContext dbContext, Movie movie, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
@@ -268,6 +275,82 @@ namespace movieShopApp.Server
                     await dbContext.SaveChangesAsync();
 
                     return Results.Created($"/api/movies/{movie.Id}", movie);
+                }).RequireAuthorization();
+
+                // UPDATE updates an existing movie (only by Admin)
+                app.MapPut("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, Movie updatedMovie, ClaimsPrincipal user) =>
+                {
+                    if (!user.IsInRole("Admin"))
+                    {
+                        return Results.Forbid();
+                    }
+
+                    var existingMovie = await dbContext.Movies.FindAsync(id);
+                    if (existingMovie == null)
+                    {
+                        return Results.NotFound($"Movie with ID {id} not found.");
+                    }
+
+                    if (string.IsNullOrEmpty(updatedMovie.Title) || string.IsNullOrEmpty(updatedMovie.Overview))
+                    {
+                        return Results.BadRequest("Title and Overview are required.");
+                    }
+
+                    if (updatedMovie.DateReleased == default)
+                    {
+                        return Results.BadRequest("DateReleased is required.");
+                    }
+
+                    if (updatedMovie.Rating < 1 || updatedMovie.Rating > 5)
+                    {
+                        return Results.BadRequest("Rating must be between 1 and 5.");
+                    }
+
+                    if (updatedMovie.Duration <= 0)
+                    {
+                        return Results.BadRequest("Duration must be greater than 0.");
+                    }
+
+                    if (updatedMovie.RentPrice < 0 || updatedMovie.BuyPrice < 0)
+                    {
+                        return Results.BadRequest("RentPrice and BuyPrice must be non-negative.");
+                    }
+
+                    existingMovie.Title = updatedMovie.Title;
+                    existingMovie.Overview = updatedMovie.Overview;
+                    existingMovie.ImageUrl = updatedMovie.ImageUrl ?? "";
+                    existingMovie.Genre = string.IsNullOrEmpty(updatedMovie.Genre) ? "" : string.Join(", ", updatedMovie.Genre.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(g => g.Trim()));
+                    existingMovie.Rating = updatedMovie.Rating;
+                    existingMovie.DateReleased = updatedMovie.DateReleased;
+                    existingMovie.Duration = updatedMovie.Duration;
+                    existingMovie.RentPrice = updatedMovie.RentPrice;
+                    existingMovie.BuyPrice = updatedMovie.BuyPrice;
+                    existingMovie.TrailerUrl = updatedMovie.TrailerUrl ?? "";
+                    existingMovie.Director = string.IsNullOrEmpty(updatedMovie.Director) ? "" : string.Join(", ", updatedMovie.Director.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(d => d.Trim()));
+                    existingMovie.Actor = string.IsNullOrEmpty(updatedMovie.Actor) ? "" : string.Join(", ", updatedMovie.Actor.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(a => a.Trim()));
+                    existingMovie.Language = string.IsNullOrEmpty(updatedMovie.Language) ? "" : string.Join(", ", updatedMovie.Language.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(l => l.Trim()));
+
+                    await dbContext.SaveChangesAsync();
+                    return Results.Ok(existingMovie);
+                }).RequireAuthorization();
+
+                // DELETE deteles a specufic movie (only by Admin)
+                app.MapDelete("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, ClaimsPrincipal user) =>
+                {
+                    if (!user.IsInRole("Admin"))
+                    {
+                        return Results.Forbid();
+                    }
+
+                    var movie = await dbContext.Movies.FindAsync(id);
+                    if (movie == null)
+                    {
+                        return Results.NotFound($"Movie with ID {id} not found.");
+                    }
+
+                    dbContext.Movies.Remove(movie);
+                    await dbContext.SaveChangesAsync();
+                    return Results.NoContent();
                 }).RequireAuthorization();
 
                 if (app.Environment.IsDevelopment())

@@ -34,6 +34,7 @@ export const getAllMovies = async () => {
             id: movie.id,
             title: movie.title,
             overview: movie.overview || 'No description available',
+            genre: movie.genre || 'No genre available',
             coverImageUrl: movie.imageUrl || '/default-movie.jpg'
         }));
     } catch (error) {

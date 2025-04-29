@@ -14,6 +14,7 @@ export default {
                     DEFAULT: "#e2e8f0",
                     100: "#f7fafc",
                     200: "#edf2f7",
+                    300: "#DDDDDD"
                 },
                 "movie-accent": {
                     DEFAULT: "#f6ad55",
