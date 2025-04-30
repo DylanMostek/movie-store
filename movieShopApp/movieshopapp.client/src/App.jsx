@@ -1,84 +1,34 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthorizeView from "./Components/Authorize.jsx";
-import Home from "./Pages/Home.jsx";
-import Login from "./Pages/Login.jsx";
-import Register from "./Pages/Register.jsx";
-import AdminDashboard from "./Pages/AdminDashboard.jsx";
-import Movies from "./Pages/Movies.jsx";
-import Popular from "./Pages/Popular.jsx";
-import NewReleases from "./Pages/NewReleases.jsx";
-import Offers from "./Pages/Offers.jsx";
-import Categories from "./Pages/Categories.jsx";
-import Profile from "./Pages/Profile.jsx";
-import Settings from "./Pages/Settings.jsx";
-import Cart from "./Pages/Cart.jsx";
+import Home from "./pages/Home.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
+import AdminDashboard from "./pages/AdminDashboard.jsx";
+import Movies from "./pages/Movies.jsx";
+import Popular from "./pages/Popular.jsx";
+import NewReleases from "./pages/NewReleases.jsx";
+import Offers from "./pages/Offers.jsx";
+import Categories from "./pages/Categories.jsx";
+import Profile from "./pages/Profile.jsx";
+import Settings from "./pages/Settings.jsx";
+import Cart from "./pages/Cart.jsx";
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route
-                    path="/"
-                    element={
-                        <AuthorizeView>
-                            <Home />
-                        </AuthorizeView>
-                    }
-                />
-                <Route
-                    path="/movies"
-                    element={
-                        <AuthorizeView>
-                            <Movies />
-                        </AuthorizeView>
-                    }
-                />
-                <Route
-                    path="/popular"
-                    element={
-                        <AuthorizeView>
-                            <Popular />
-                        </AuthorizeView>
-                    }
-                />
-                <Route
-                    path="/new-releases"
-                    element={
-                        <AuthorizeView>
-                            <NewReleases />
-                        </AuthorizeView>
-                    }
-                />
-                <Route
-                    path="/offers"
-                    element={
-                        <AuthorizeView>
-                            <Offers />
-                        </AuthorizeView>
-                    }
-                />
-                <Route
-                    path="/categories"
-                    element={
-                        <AuthorizeView>
-                            <Categories />
-                        </AuthorizeView>
-                    }
-                />
+                <Route path="/" element={<Home />} />
+                <Route path="/movies" element={<Movies />} />
+                <Route path="/popular" element={<Popular />} />
+                <Route path="/new-releases" element={<NewReleases />} />
+                <Route path="/offers" element={<Offers />} />
+                <Route path="/categories" element={<Categories />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route
-                    path="/admin"
-                    element={
-                        <AuthorizeView requireAuth={true}>
-                            <AdminDashboard />
-                        </AuthorizeView>
-                    }
-                />
-                <Route
                     path="/profile"
                     element={
-                        <AuthorizeView requireAuth={true}>
+                        <AuthorizeView>
                             <Profile />
                         </AuthorizeView>
                     }
@@ -86,7 +36,7 @@ function App() {
                 <Route
                     path="/settings"
                     element={
-                        <AuthorizeView requireAuth={true}>
+                        <AuthorizeView>
                             <Settings />
                         </AuthorizeView>
                     }
@@ -94,8 +44,16 @@ function App() {
                 <Route
                     path="/cart"
                     element={
-                        <AuthorizeView requireAuth={true}>
+                        <AuthorizeView>
                             <Cart />
+                        </AuthorizeView>
+                    }
+                />
+                <Route
+                    path="/admin"
+                    element={
+                        <AuthorizeView>
+                            <AdminDashboard />
                         </AuthorizeView>
                     }
                 />
