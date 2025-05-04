@@ -9,7 +9,7 @@ namespace movieShopApp.Server.Data
             : base(options)
         {
         }
-
+public DbSet<User> UsersDB { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
