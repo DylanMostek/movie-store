@@ -24,7 +24,7 @@ public class UserController : ControllerBase
        
         var userEmail = User.Identity?.Name;
 
-        var user = await _context.Users
+        var user = await _context.UsersDB
             .AsNoTracking()
             .FirstOrDefaultAsync(u => u.Email == userEmail);
 
