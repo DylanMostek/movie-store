@@ -1,1 +1,2 @@
 C:\Users\moham\OneDrive\Desktop\movieShopApp\movieshopapp.client\obj\Debug\movieshopapp.client.esproj.CoreCompileInputs.cache
+C:\Users\moham\OneDrive\Desktop\softGroup16Git\softProject\movieShopApp\movieshopapp.client\obj\Debug\movieshopapp.client.esproj.CoreCompileInputs.cache

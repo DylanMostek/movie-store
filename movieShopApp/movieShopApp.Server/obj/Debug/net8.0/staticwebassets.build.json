@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "dB1+AkbJLZDp04iLYc+AYTbEHAMrJa+11osbvSBoaoM=",
+  "Hash": "zkGc/wgG41dhXdn+OdvTFMR62STajkzMGfF7Bk4ot0Y=",
   "Source": "movieShopApp.Server",
   "BasePath": "_content/movieShopApp.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieshopapp.client\\movieshopapp.client.esproj",
+      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\movieshopapp.client.esproj",
       "Version": 2,
       "Source": "movieshopapp.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "movieShopApp.Server\\wwwroot",
       "Source": "movieShopApp.Server",
-      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
       "BasePath": "_content/movieShopApp.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
+      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
       "SourceId": "movieShopApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
       "BasePath": "_content/movieShopApp.Server",
       "RelativePath": "assets/HomePageImage-CYLRV0jS#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -50,12 +50,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\HomePageImage-CYLRV0jS.png"
     },
     {
-      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-B8VJeBNG.css",
+      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-BhMt_ns3.css",
       "SourceId": "movieShopApp.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
       "BasePath": "_content/movieShopApp.Server",
-      "RelativePath": "assets/index-B8VJeBNG#[.{fingerprint}]?.css",
+      "RelativePath": "assets/index-BhMt_ns3#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -64,17 +64,80 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0pzoqd63h8",
-      "Integrity": "TGdzGKvYr1+U7qjgD4XU7FrS6QehNJ3dvkTI4BFQYb8=",
+      "Fingerprint": "y3dh0zjrxk",
+      "Integrity": "nriw9Z/Cy+wMxAFiHdU9T25d5iptGINBEpyfUS5AvVs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\index-B8VJeBNG.css"
+      "OriginalItemSpec": "wwwroot\\assets\\index-BhMt_ns3.css"
+    },
+    {
+      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-DbGOWLG4.js",
+      "SourceId": "movieShopApp.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
+      "BasePath": "_content/movieShopApp.Server",
+      "RelativePath": "assets/index-DbGOWLG4#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5prx2ceeq9",
+      "Integrity": "h6OcYxvL056YJXIvZPwF7jFtF1hP41ZFvRWa/9j6dBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-DbGOWLG4.js"
+    },
+    {
+      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\index.html",
+      "SourceId": "movieShopApp.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
+      "BasePath": "_content/movieShopApp.Server",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "19u2bbyags",
+      "Integrity": "pZzPamw7sm1K1Ya9FVyotMy48YJUJhALzXC9yNcZ0f4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\vite.svg",
+      "SourceId": "movieShopApp.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\",
+      "BasePath": "_content/movieShopApp.Server",
+      "RelativePath": "vite#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "69kjnsiwqx",
+      "Integrity": "SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vite.svg"
     }
   ],
   "Endpoints": [
     {
       "Route": "assets/HomePageImage-CYLRV0jS.12jdtr9de1.png",
-      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -95,7 +158,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 01:31:34 GMT"
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -119,7 +182,7 @@
     },
     {
       "Route": "assets/HomePageImage-CYLRV0jS.png",
-      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\HomePageImage-CYLRV0jS.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -140,7 +203,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 01:31:34 GMT"
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -155,8 +218,8 @@
       ]
     },
     {
-      "Route": "assets/index-B8VJeBNG.0pzoqd63h8.css",
-      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-B8VJeBNG.css",
+      "Route": "assets/index-BhMt_ns3.css",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-BhMt_ns3.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -165,7 +228,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10530"
+          "Value": "22160"
         },
         {
           "Name": "Content-Type",
@@ -173,56 +236,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TGdzGKvYr1+U7qjgD4XU7FrS6QehNJ3dvkTI4BFQYb8=\""
+          "Value": "\"nriw9Z/Cy+wMxAFiHdU9T25d5iptGINBEpyfUS5AvVs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 01:31:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0pzoqd63h8"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/index-B8VJeBNG.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TGdzGKvYr1+U7qjgD4XU7FrS6QehNJ3dvkTI4BFQYb8="
-        }
-      ]
-    },
-    {
-      "Route": "assets/index-B8VJeBNG.css",
-      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-B8VJeBNG.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10530"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TGdzGKvYr1+U7qjgD4XU7FrS6QehNJ3dvkTI4BFQYb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 01:31:34 GMT"
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -232,7 +250,298 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TGdzGKvYr1+U7qjgD4XU7FrS6QehNJ3dvkTI4BFQYb8="
+          "Value": "sha256-nriw9Z/Cy+wMxAFiHdU9T25d5iptGINBEpyfUS5AvVs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-BhMt_ns3.y3dh0zjrxk.css",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-BhMt_ns3.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nriw9Z/Cy+wMxAFiHdU9T25d5iptGINBEpyfUS5AvVs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3dh0zjrxk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-BhMt_ns3.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nriw9Z/Cy+wMxAFiHdU9T25d5iptGINBEpyfUS5AvVs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DbGOWLG4.5prx2ceeq9.js",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-DbGOWLG4.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6OcYxvL056YJXIvZPwF7jFtF1hP41ZFvRWa/9j6dBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5prx2ceeq9"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-DbGOWLG4.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6OcYxvL056YJXIvZPwF7jFtF1hP41ZFvRWa/9j6dBg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DbGOWLG4.js",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\assets\\index-DbGOWLG4.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6OcYxvL056YJXIvZPwF7jFtF1hP41ZFvRWa/9j6dBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6OcYxvL056YJXIvZPwF7jFtF1hP41ZFvRWa/9j6dBg="
+        }
+      ]
+    },
+    {
+      "Route": "index.19u2bbyags.html",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pZzPamw7sm1K1Ya9FVyotMy48YJUJhALzXC9yNcZ0f4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "19u2bbyags"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pZzPamw7sm1K1Ya9FVyotMy48YJUJhALzXC9yNcZ0f4="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pZzPamw7sm1K1Ya9FVyotMy48YJUJhALzXC9yNcZ0f4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 18:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pZzPamw7sm1K1Ya9FVyotMy48YJUJhALzXC9yNcZ0f4="
+        }
+      ]
+    },
+    {
+      "Route": "vite.69kjnsiwqx.svg",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\vite.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 04:50:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "69kjnsiwqx"
+        },
+        {
+          "Name": "label",
+          "Value": "vite.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
+        }
+      ]
+    },
+    {
+      "Route": "vite.svg",
+      "AssetFile": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\wwwroot\\vite.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 04:50:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnSK/UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs="
         }
       ]
     }

@@ -1,6 +1,7 @@
-import { useState } from "react";
+﻿import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../Components/NavBar.jsx";
+import { UserContext } from "../Components/Authorize.jsx";
 
 function Register() {
     const [email, setEmail] = useState("");
@@ -8,6 +9,7 @@ function Register() {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const { checkAuth } = useContext(UserContext); // Access checkAuth from context
 
     const goToLogin = () => {
         navigate("/login");
@@ -21,7 +23,7 @@ function Register() {
     };
 
     const handleSubmit = async (event) => {
-        event.preventDefault(); 
+        event.preventDefault();
         if (!email || !password || !confirmPassword) {
             setError("Please fill in all fields.");
             return;
@@ -42,11 +44,13 @@ function Register() {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ email, password }),
+                credentials: "include",
             });
 
             if (response.ok) {
                 setError("Registration successful!");
-                navigate("/login"); 
+                await checkAuth(); 
+                setTimeout(() => navigate("/"), 500);
             } else {
                 const errorData = await response.json();
                 setError(errorData.message || "Error registering.");
@@ -61,11 +65,11 @@ function Register() {
         <div className="min-h-screen bg-gradient-to-br from-movie-dark to-indigo-900">
             <NavBar />
             <div className="flex items-center justify-center px-4 py-16">
-                <div className="bg-gray-800 p-8 rounded-xl shadow-lg max-w-md w-full space-y-6">
-                    <h3 className="text-3xl font-bold text-white text-center">Register</h3>
+                <div className="w-full max-w-md space-y-6 rounded-xl bg-gray-800 p-8 shadow-lg">
+                    <h3 className="text-center text-3xl font-bold text-white">Register</h3>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div>
-                            <label htmlFor="email" className="block text-movie-light mb-2">
+                            <label htmlFor="email" className="mb-2 block text-movie-light">
                                 Email
                             </label>
                             <input
@@ -74,12 +78,12 @@ function Register() {
                                 name="email"
                                 value={email}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-movie-accent"
+                                className="w-full rounded-lg bg-gray-700 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-movie-accent"
                                 placeholder="Enter your email"
                             />
                         </div>
                         <div>
-                            <label htmlFor="password" className="block text-movie-light mb-2">
+                            <label htmlFor="password" className="mb-2 block text-movie-light">
                                 Password
                             </label>
                             <input
@@ -88,12 +92,12 @@ function Register() {
                                 name="password"
                                 value={password}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-movie-accent"
+                                className="w-full rounded-lg bg-gray-700 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-movie-accent"
                                 placeholder="Enter your password"
                             />
                         </div>
                         <div>
-                            <label htmlFor="confirmPassword" className="block text-movie-light mb-2">
+                            <label htmlFor="confirmPassword" className="mb-2 block text-movie-light">
                                 Confirm Password
                             </label>
                             <input
@@ -102,29 +106,26 @@ function Register() {
                                 name="confirmPassword"
                                 value={confirmPassword}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-movie-accent"
+                                className="w-full rounded-lg bg-gray-700 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-movie-accent"
                                 placeholder="Confirm your password"
                             />
                         </div>
                         <button
                             type="submit"
-                            className="w-full py-3 bg-movie-accent text-white font-semibold rounded-lg hover:bg-yellow-600 transition duration-300"
+                            className="w-full rounded-lg bg-movie-accent py-3 font-semibold text-white transition duration-300 hover:bg-yellow-600"
                         >
                             Register
                         </button>
                         <button
                             type="button"
                             onClick={goToLogin}
-                            className="w-full py-3 bg-transparent border-2 border-movie-accent text-movie-accent rounded-lg hover:bg-movie-accent hover:text-white transition duration-300"
+                            className="w-full rounded-lg border-2 border-movie-accent bg-transparent py-3 text-movie-accent transition duration-300 hover:bg-movie-accent hover:text-white"
                         >
                             Already have an account? Login
                         </button>
                     </form>
                     {error && (
-                        <p
-                            className={`text-center ${error.includes("successful") ? "text-green-400" : "text-red-400"
-                                }`}
-                        >
+                        <p className={`text-center ${error.includes("successful") ? "text-green-400" : "text-red-400"}`}>
                             {error}
                         </p>
                     )}
