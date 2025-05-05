@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using movieShopApp.Server.Data;
 using movieShopApp.Server.Models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
 
 namespace movieShopApp.Server
 {
@@ -210,6 +211,28 @@ namespace movieShopApp.Server
 
                 app.MapIdentityApi<ApplicationUser>();
 
+                app.MapPost("/register", async (UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, [FromBody] RegisterModel model) =>
+                {
+                    if (string.IsNullOrEmpty(model.Email) || string.IsNullOrEmpty(model.Password))
+                    {
+                        return Results.BadRequest("Email and password are required.");
+                    }
+
+                    var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                    var result = await userManager.CreateAsync(user, model.Password);
+
+                    if (result.Succeeded)
+                    {
+                        // Assign User role
+                        await userManager.AddToRoleAsync(user, "User");
+                        await signInManager.SignInAsync(user, isPersistent: true);
+
+                        return Results.Ok();
+                    }
+
+                    return Results.BadRequest(string.Join(", ", result.Errors.Select(e => e.Description)));
+                });
+
                 app.MapPost("/logout", async (SignInManager<ApplicationUser> signInManager) =>
                 {
                     await signInManager.SignOutAsync();
@@ -223,14 +246,14 @@ namespace movieShopApp.Server
                     return Results.Json(new { Email = email, Roles = roles });
                 }).RequireAuthorization();
 
-                //  GET gets all the movies
+                // GET gets all the movies
                 app.MapGet("/api/movies", async (ApplicationDbContext dbContext) =>
                 {
                     var movies = await dbContext.Movies.ToListAsync();
                     return Results.Ok(movies);
                 });
 
-                //  GET adds a new movie (only by Admin)
+                // POST adds a new movie (only by Admin)
                 app.MapPost("/api/movies", async (ApplicationDbContext dbContext, Movie movie, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
@@ -277,7 +300,7 @@ namespace movieShopApp.Server
                     return Results.Created($"/api/movies/{movie.Id}", movie);
                 }).RequireAuthorization();
 
-                // UPDATE updates an existing movie (only by Admin)
+                // PUT updates an existing movie (only by Admin)
                 app.MapPut("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, Movie updatedMovie, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
@@ -334,7 +357,7 @@ namespace movieShopApp.Server
                     return Results.Ok(existingMovie);
                 }).RequireAuthorization();
 
-                // DELETE deteles a specufic movie (only by Admin)
+                // DELETE deletes a specific movie (only by Admin)
                 app.MapDelete("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
@@ -369,5 +392,11 @@ namespace movieShopApp.Server
                 throw;
             }
         }
+    }
+
+    public class RegisterModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
