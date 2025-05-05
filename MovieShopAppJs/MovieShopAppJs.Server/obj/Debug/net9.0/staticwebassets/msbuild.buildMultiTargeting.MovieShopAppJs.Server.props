@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\MovieShopAppJs.Server.props" />
-</Project>
