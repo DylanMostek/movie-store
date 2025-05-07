@@ -60,7 +60,6 @@
 
 	<Target Name="CopyClientFiles" AfterTargets="BuildClient">
 		<MakeDir Directories="$(ProjectDir)\wwwroot" />
-		<RemoveDir Directories="$(ProjectDir)\wwwroot" Condition="Exists('$(ProjectDir)\wwwroot')" />
 		<MakeDir Directories="$(ProjectDir)\wwwroot" />
 		<Copy SourceFiles="@(SpaFiles)" DestinationFolder="$(ProjectDir)\wwwroot\%(RecursiveDir)" Condition="@(SpaFiles->Count()) > 0" ContinueOnError="true" />
 		<Warning Condition="!Exists('$(ProjectDir)\wwwroot\index.html')" Text="Failed to copy React build output to wwwroot: index.html not found. Ensure the React build succeeded and generated the dist folder." />

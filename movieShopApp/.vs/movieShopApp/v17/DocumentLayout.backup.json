@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\components\\movielist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\components\\movielist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|solutionrelative:movieshopapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\services\\movieservices.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\services\\movieservices.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\movies.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\movies.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Migrations\\20250507144303_Migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:movieShopApp.Server\\Migrations\\20250507144303_Migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.server\\movieshopapp.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|solutionrelative:movieshopapp.server\\movieshopapp.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\register.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -19,20 +59,8 @@
       "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\components\\authorize.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\components\\movielist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\components\\movielist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.server\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,40 +71,12 @@
       "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\newreleases.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\services\\movieservices.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\services\\movieservices.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.server\\movieshopapp.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|solutionrelative:movieshopapp.server\\movieshopapp.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\movies.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\movies.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\offers.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\offers.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\components\\moviebanner.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\components\\moviebanner.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.server\\data\\applicationdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,10 +123,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DDB869AB-4C19-4984-BFC1-D0500E051C6B}|movieshopapp.client\\movieshopapp.client.esproj|solutionrelative:movieshopapp.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|c:\\users\\moham\\onedrive\\desktop\\softgroup16git\\softproject\\movieshopapp\\movieshopapp.server\\migrations\\20250418021813_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D464151-CE9D-4EED-8522-DDAC1A802D13}|movieShopApp.Server\\movieShopApp.Server.csproj|solutionrelative:movieshopapp.server\\migrations\\20250418021813_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -136,23 +132,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1918322710:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashboard.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
+              "ViewState": "AgIAAJACAAAAAAAAAAAAAKsCAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-18T01:22:39.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
+              "Title": "movieServices.js",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\services\\movieServices.js",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\services\\movieServices.js",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\services\\movieServices.js",
+              "RelativeToolTip": "movieshopapp.client\\src\\services\\movieServices.js",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-17T17:41:38.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovieList.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\MovieList.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\components\\MovieList.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\MovieList.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\components\\MovieList.jsx",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-17T17:42:18.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Movies.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Movies.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Movies.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Movies.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Movies.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-17T17:42:52.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Home.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Home.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Home.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Home.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-17T17:42:40.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Program.cs",
+              "RelativeDocumentMoniker": "movieShopApp.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Program.cs",
+              "RelativeToolTip": "movieShopApp.Server\\Program.cs",
+              "ViewState": "AgIAAEgBAAAAAAAAAAAYwGcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T21:21:48.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Profile.jsx",
               "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Profile.jsx",
               "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Profile.jsx",
@@ -160,44 +222,7 @@
               "RelativeToolTip": "movieshopapp.client\\src\\pages\\Profile.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-18T01:14:03.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\App.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\App.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\App.jsx",
-              "ViewState": "AgIAACoAAAAAAAAAAAAqwEAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T17:40:44.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Authorize.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\Authorize.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\components\\Authorize.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\Authorize.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\components\\Authorize.jsx",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAEcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T22:23:51.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Program.cs",
-              "RelativeDocumentMoniker": "movieShopApp.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Program.cs",
-              "RelativeToolTip": "movieShopApp.Server\\Program.cs",
-              "ViewState": "AgIAAJEBAAAAAAAAAAAAAJEBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T21:21:48.852Z",
+              "WhenOpened": "2025-04-18T01:14:03.114Z",
               "EditorCaption": ""
             },
             {
@@ -215,117 +240,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Login.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Login.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Login.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Login.jsx",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAQwAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-18T01:23:59.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MovieList.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\MovieList.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\components\\MovieList.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\MovieList.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\components\\MovieList.jsx",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAQwBAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T17:42:18.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Register.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Register.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Register.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Register.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-30T17:52:19.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminDashboard.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\pages\\AdminDashboard.jsx",
-              "ViewState": "AgIAAJYBAAAAAAAAAAAAADQBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-18T01:22:39.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "movieShopApp.Server.csproj",
               "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\movieShopApp.Server.csproj",
               "RelativeDocumentMoniker": "movieShopApp.Server\\movieShopApp.Server.csproj",
               "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\movieShopApp.Server.csproj",
               "RelativeToolTip": "movieShopApp.Server\\movieShopApp.Server.csproj",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-04-17T22:15:29.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "react-dom.development.js",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
-              "RelativeDocumentMoniker": "movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
-              "RelativeToolTip": "movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
-              "ViewState": "AgIAAEFpAAAAAAAAAAAewFFpAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-18T15:10:06.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NewReleases.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\NewReleases.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\NewReleases.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\NewReleases.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\pages\\NewReleases.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T17:43:14.077Z"
+              "DocumentIndex": 8,
+              "Title": "20250507144303_Migrations.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Migrations\\20250507144303_Migrations.cs",
+              "RelativeDocumentMoniker": "movieShopApp.Server\\Migrations\\20250507144303_Migrations.cs",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Migrations\\20250507144303_Migrations.cs",
+              "RelativeToolTip": "movieShopApp.Server\\Migrations\\20250507144303_Migrations.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAgwB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:43:03.511Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "movieServices.js",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\services\\movieServices.js",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\services\\movieServices.js",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\services\\movieServices.js",
-              "RelativeToolTip": "movieshopapp.client\\src\\services\\movieServices.js",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAawCQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-17T17:41:38.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Models\\Movie.cs",
-              "RelativeDocumentMoniker": "movieShopApp.Server\\Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Models\\Movie.cs",
-              "RelativeToolTip": "movieShopApp.Server\\Models\\Movie.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T22:37:25.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "tailwind.config.js",
               "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\tailwind.config.js",
               "RelativeDocumentMoniker": "movieshopapp.client\\tailwind.config.js",
@@ -337,27 +277,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Movies.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Movies.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Movies.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Movies.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Movies.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Register.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Register.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Register.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Register.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Register.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T17:42:52.789Z"
+              "WhenOpened": "2025-04-30T17:52:19.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Home.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Home.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Home.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Home.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Home.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Login.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Login.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Login.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Login.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\pages\\Login.jsx",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAQwAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T17:42:40.444Z"
+              "WhenOpened": "2025-04-18T01:23:59.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Authorize.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\Authorize.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\components\\Authorize.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\Authorize.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\components\\Authorize.jsx",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAEcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-17T22:23:51.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\App.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\App.jsx",
+              "ViewState": "AgIAACoAAAAAAAAAAAAqwEAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-17T17:40:44.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "react-dom.development.js",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
+              "RelativeDocumentMoniker": "movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
+              "RelativeToolTip": "movieshopapp.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
+              "ViewState": "AgIAAEFpAAAAAAAAAAAewFFpAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-18T15:10:06.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NewReleases.jsx",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\NewReleases.jsx",
+              "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\NewReleases.jsx",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\NewReleases.jsx",
+              "RelativeToolTip": "movieshopapp.client\\src\\pages\\NewReleases.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-17T17:43:14.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "movieShopApp.Server\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Models\\Movie.cs",
+              "RelativeToolTip": "movieShopApp.Server\\Models\\Movie.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T22:37:25.28Z"
             },
             {
               "$type": "Document",
@@ -373,19 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MovieBanner.jsx",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\MovieBanner.jsx",
-              "RelativeDocumentMoniker": "movieshopapp.client\\src\\components\\MovieBanner.jsx",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\components\\MovieBanner.jsx",
-              "RelativeToolTip": "movieshopapp.client\\src\\components\\MovieBanner.jsx",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-17T17:42:00.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Offers.jsx",
               "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieshopapp.client\\src\\pages\\Offers.jsx",
               "RelativeDocumentMoniker": "movieshopapp.client\\src\\pages\\Offers.jsx",
@@ -466,18 +454,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-04-17T17:42:28.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "20250418021813_Migrations.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Migrations\\20250418021813_Migrations.cs",
-              "RelativeDocumentMoniker": "movieShopApp.Server\\Migrations\\20250418021813_Migrations.cs",
-              "ToolTip": "C:\\Users\\moham\\OneDrive\\Desktop\\softGroup16Git\\softProject\\movieShopApp\\movieShopApp.Server\\Migrations\\20250418021813_Migrations.cs",
-              "RelativeToolTip": "movieShopApp.Server\\Migrations\\20250418021813_Migrations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T02:18:13.946Z"
             },
             {
               "$type": "Document",

@@ -9,6 +9,9 @@ function MovieList() {
         getAllMovies()
             .then((data) => {
                 console.log("Movies fetched:", data);
+                data.forEach((movie) => {
+                    console.log(`Movie: ${movie.title}, ImageUrl: ${movie.imageUrl}`);
+                });
                 setMovies(data);
             })
             .catch((error) => console.error("Error fetching movies:", error));
@@ -28,11 +31,11 @@ function MovieList() {
                             key={movie.id}
                             className="shadow-custom flex flex-col rounded-lg bg-white transition-transform hover:shadow-lg hover:-translate-y-1 dark:bg-movie-dark-800"
                         >
-                            <div className="h-96 w-full overflow-hidden rounded-t-lg">
+                            <div className="h-98 w-full overflow-hidden rounded-t-lg p-2">
                                 <img
-                                    src={movie.imageUrl}
+                                    src={movie.imageUrl} 
                                     alt={movie.title}
-                                    className="h-full w-full object-cover transition-transform hover:scale-102"
+                                    className="h-full w-full object-cover" 
                                 />
                             </div>
                             <div className="flex flex-1 flex-col p-4">

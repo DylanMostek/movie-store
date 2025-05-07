@@ -4,7 +4,7 @@ import NavBar from "../Components/NavBar.jsx";
 
 function AdminDashboard() {
     const [movie, setMovie] = useState({
-        id: null, 
+        id: null,
         title: "",
         overview: "",
         imageUrl: "",
@@ -25,14 +25,14 @@ function AdminDashboard() {
         actor: "",
         language: "",
     });
-    const [movies, setMovies] = useState([]); // State to store every movies
+    const [movies, setMovies] = useState([]); 
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
     const [formErrors, setFormErrors] = useState({});
-    const [isEditing, setIsEditing] = useState(false); // Track if editing movie
+    const [isEditing, setIsEditing] = useState(false);
 
-    // Fetch all movies
+    // Fetch movies when the page loads
     useEffect(() => {
         const fetchMovies = async () => {
             try {
@@ -46,13 +46,14 @@ function AdminDashboard() {
                     setError("Failed to fetch movies.");
                 }
             } catch (err) {
-                setError("An error occurred while fetching movies.");
+                setError("Error fetching movies.");
                 console.error(err);
             }
         };
         fetchMovies();
     }, []);
 
+    // Handle input changes for text fields
     const handleChange = (e) => {
         const { name, value } = e.target;
         setMovie((prev) => ({
@@ -62,6 +63,7 @@ function AdminDashboard() {
         setFormErrors((prev) => ({ ...prev, [name]: "" }));
     };
 
+    // Handle input for genre, director, actor, language
     const handleTagInputChange = (e) => {
         const { name, value } = e.target;
         setCurrentInput((prev) => ({
@@ -70,6 +72,7 @@ function AdminDashboard() {
         }));
     };
 
+    // Add a tag (genre, director, and such) when Enter KEY is pressed
     const handleAddTag = (field, e) => {
         if (e.key === "Enter" && currentInput[field].trim()) {
             e.preventDefault();
@@ -84,6 +87,7 @@ function AdminDashboard() {
         }
     };
 
+    // Remove a tag
     const handleRemoveTag = (field, index) => {
         setMovie((prev) => ({
             ...prev,
@@ -96,40 +100,43 @@ function AdminDashboard() {
         if (!movie.title.trim()) errors.title = "Title is required.";
         if (!movie.overview.trim()) errors.overview = "Overview is required.";
         if (!movie.dateReleased) errors.dateReleased = "Release Date is required.";
-        if (movie.rating < 1 || movie.rating > 5) errors.rating = "Rating must be between 1 and 5.";
+        if (movie.rating < 1 || movie.rating > 5) errors.rating = "Rating must be 1-5.";
         if (movie.duration <= 0) errors.duration = "Duration must be greater than 0.";
-        if (movie.rentPrice < 0) errors.rentPrice = "Rent Price must be non-negative.";
-        if (movie.buyPrice < 0) errors.buyPrice = "Buy Price must be non-negative.";
-
+        if (movie.rentPrice < 0) errors.rentPrice = "Rent Price cannot be negative.";
+        if (movie.buyPrice < 0) errors.buyPrice = "Buy Price cannot be negative.";
         setFormErrors(errors);
         return Object.keys(errors).length === 0;
     };
 
+    // Handle form submission (Add or Update movie)
     const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage("");
         setError("");
         setLoading(true);
 
+        // Check if form is valid
         if (!validateForm()) {
             setLoading(false);
-            setError("Please fix the errors in the form.");
+            setError("Please fix the form errors. Bruh");
             return;
         }
 
-        // excluding id cause it will be handled by the db
-        const { id, ...movieDataWithoutId } = movie; 
         const movieData = {
-            ...(isEditing ? { id } : movieDataWithoutId), // Include id only when editing
-            dateReleased: movie.dateReleased ? new Date(movie.dateReleased).toISOString().split("T")[0] : "",
-            rating: parseInt(movie.rating) || 0,
-            duration: parseInt(movie.duration) || 0,
+            id: movie.id,
+            title: movie.title.trim(),
+            overview: movie.overview.trim(),
+            imageUrl: movie.imageUrl || "",
+            genre: movie.genre.join(", ") || "",
+            rating: parseInt(movie.rating) || 1,
+            dateReleased: movie.dateReleased, // Send as YYYY-MM-DD string
+            duration: parseInt(movie.duration) || 1,
             rentPrice: parseFloat(movie.rentPrice) || 0,
             buyPrice: parseFloat(movie.buyPrice) || 0,
-            genre: movie.genre.join(", "),
-            director: movie.director.join(", "),
-            actor: movie.actor.join(", "),
-            language: movie.language.join(", "),
+            trailerUrl: movie.trailerUrl || "",
+            director: movie.director.join(", ") || "",
+            actor: movie.actor.join(", ") || "",
+            language: movie.language.join(", ") || "",
         };
 
         try {
@@ -137,6 +144,8 @@ function AdminDashboard() {
                 ? `https://localhost:7131/api/movies/${movie.id}`
                 : "https://localhost:7131/api/movies";
             const method = isEditing ? "PUT" : "POST";
+
+            console.log("Sending request:", { url, method, movieData }); // Debugging cause sometimes it wont worl
 
             const response = await fetch(url, {
                 method: method,
@@ -181,18 +190,25 @@ function AdminDashboard() {
                     language: "",
                 });
                 setIsEditing(false);
+                setFormErrors({});
             } else {
                 const errorData = await response.json();
-                setError(errorData.message || `Failed to ${isEditing ? "update" : "add"} movie.`);
+                console.log("Error response:", errorData); // Debug again
+                setError(
+                    errorData.message ||
+                    errorData.errors?.join(", ") ||
+                    `Failed to ${isEditing ? "update" : "add"} movie.`
+                );
             }
         } catch (err) {
-            setError(`An error occurred while ${isEditing ? "updating" : "adding"} the movie.`);
-            console.error(err);
+            console.error("Request failed:", err); // Debug again
+            setError(`Error ${isEditing ? "updating" : "adding"} movie.`);
         } finally {
             setLoading(false);
         }
     };
 
+    // Load movie data for editing (only admin)
     const handleEdit = (movieToEdit) => {
         setMovie({
             ...movieToEdit,
@@ -200,11 +216,13 @@ function AdminDashboard() {
             director: movieToEdit.director ? movieToEdit.director.split(", ").filter(d => d.trim()) : [],
             actor: movieToEdit.actor ? movieToEdit.actor.split(", ").filter(a => a.trim()) : [],
             language: movieToEdit.language ? movieToEdit.language.split(", ").filter(l => l.trim()) : [],
+            dateReleased: movieToEdit.dateReleased || "", // Keep as string
         });
         setIsEditing(true);
-        window.scrollTo({ top: 0, behavior: "smooth" }); 
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
+    // Delete a movie
     const handleDelete = async (id) => {
         if (!window.confirm("Are you sure you want to delete this movie?")) return;
 
@@ -222,11 +240,12 @@ function AdminDashboard() {
                 setError(errorData.message || "Failed to delete movie.");
             }
         } catch (err) {
-            setError("An error occurred while deleting the movie.");
+            setError("Error deleting movie.");
             console.error(err);
         }
     };
 
+    // Cancel editing 
     const handleCancelEdit = () => {
         setMovie({
             id: null,
@@ -327,7 +346,6 @@ function AdminDashboard() {
                                             src={movie.imageUrl}
                                             alt="Preview"
                                             className="h-48 w-32 rounded-lg object-cover shadow-sm"
-                                            onError={(e) => (e.target.src = "/default-movie.jpg")}
                                         />
                                     </div>
                                 )}
@@ -402,7 +420,7 @@ function AdminDashboard() {
                                 {formErrors.dateReleased && <p className="mt-1 text-sm text-red-500">{formErrors.dateReleased}</p>}
                             </div>
 
-                            {/* Lengths */}
+                            {/* Duration */}
                             <div>
                                 <label htmlFor="duration" className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
                                     Duration (minutes)
@@ -439,7 +457,7 @@ function AdminDashboard() {
                                 {formErrors.rentPrice && <p className="mt-1 text-sm text-red-500">{formErrors.rentPrice}</p>}
                             </div>
 
-                            {/*  biuying Price */}
+                            {/* Buy Price */}
                             <div>
                                 <label htmlFor="buyPrice" className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
                                     Buy Price ($)

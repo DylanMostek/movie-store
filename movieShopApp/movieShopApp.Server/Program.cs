@@ -4,6 +4,8 @@ using movieShopApp.Server.Data;
 using movieShopApp.Server.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 
 namespace movieShopApp.Server
 {
@@ -47,6 +49,12 @@ namespace movieShopApp.Server
                 builder.Services.AddAuthorization();
                 builder.Services.AddControllers();
                 builder.Services.AddSwaggerGen();
+
+                // Add custom DateOnly model binder
+                builder.Services.AddControllers(options =>
+                {
+                    options.ModelBinderProviders.Insert(0, new DateOnlyModelBinderProvider());
+                });
 
                 builder.Services.AddCors(options =>
                 {
@@ -223,10 +231,8 @@ namespace movieShopApp.Server
 
                     if (result.Succeeded)
                     {
-                        // Assign User role
                         await userManager.AddToRoleAsync(user, "User");
                         await signInManager.SignInAsync(user, isPersistent: true);
-
                         return Results.Ok();
                     }
 
@@ -246,14 +252,12 @@ namespace movieShopApp.Server
                     return Results.Json(new { Email = email, Roles = roles });
                 }).RequireAuthorization();
 
-                // GET gets all the movies
                 app.MapGet("/api/movies", async (ApplicationDbContext dbContext) =>
                 {
                     var movies = await dbContext.Movies.ToListAsync();
                     return Results.Ok(movies);
                 });
 
-                // POST adds a new movie (only by Admin)
                 app.MapPost("/api/movies", async (ApplicationDbContext dbContext, Movie movie, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
@@ -300,8 +304,7 @@ namespace movieShopApp.Server
                     return Results.Created($"/api/movies/{movie.Id}", movie);
                 }).RequireAuthorization();
 
-                // PUT updates an existing movie (only by Admin)
-                app.MapPut("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, Movie updatedMovie, ClaimsPrincipal user) =>
+                app.MapPut("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, [FromBody] Movie updatedMovie, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
                     {
@@ -314,50 +317,40 @@ namespace movieShopApp.Server
                         return Results.NotFound($"Movie with ID {id} not found.");
                     }
 
-                    if (string.IsNullOrEmpty(updatedMovie.Title) || string.IsNullOrEmpty(updatedMovie.Overview))
+                    // Validate teh required fields
+                    var validationErrors = new List<string>();
+                    if (string.IsNullOrEmpty(updatedMovie.Title)) validationErrors.Add("Title is required.");
+                    if (string.IsNullOrEmpty(updatedMovie.Overview)) validationErrors.Add("Overview is required.");
+                    if (updatedMovie.DateReleased == default) validationErrors.Add("DateReleased is required.");
+                    if (updatedMovie.Rating < 1 || updatedMovie.Rating > 5) validationErrors.Add("Rating must be between 1 and 5.");
+                    if (updatedMovie.Duration <= 0) validationErrors.Add("Duration must be greater than 0.");
+                    if (updatedMovie.RentPrice < 0) validationErrors.Add("RentPrice must be non-negative.");
+                    if (updatedMovie.BuyPrice < 0) validationErrors.Add("BuyPrice must be non-negative.");
+
+                    if (validationErrors.Any())
                     {
-                        return Results.BadRequest("Title and Overview are required.");
+                        return Results.BadRequest(new { Errors = validationErrors });
                     }
 
-                    if (updatedMovie.DateReleased == default)
-                    {
-                        return Results.BadRequest("DateReleased is required.");
-                    }
-
-                    if (updatedMovie.Rating < 1 || updatedMovie.Rating > 5)
-                    {
-                        return Results.BadRequest("Rating must be between 1 and 5.");
-                    }
-
-                    if (updatedMovie.Duration <= 0)
-                    {
-                        return Results.BadRequest("Duration must be greater than 0.");
-                    }
-
-                    if (updatedMovie.RentPrice < 0 || updatedMovie.BuyPrice < 0)
-                    {
-                        return Results.BadRequest("RentPrice and BuyPrice must be non-negative.");
-                    }
-
+                    // Update only provided fields
                     existingMovie.Title = updatedMovie.Title;
                     existingMovie.Overview = updatedMovie.Overview;
-                    existingMovie.ImageUrl = updatedMovie.ImageUrl ?? "";
-                    existingMovie.Genre = string.IsNullOrEmpty(updatedMovie.Genre) ? "" : string.Join(", ", updatedMovie.Genre.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(g => g.Trim()));
+                    existingMovie.ImageUrl = updatedMovie.ImageUrl ?? existingMovie.ImageUrl;
+                    existingMovie.Genre = updatedMovie.Genre ?? existingMovie.Genre;
                     existingMovie.Rating = updatedMovie.Rating;
                     existingMovie.DateReleased = updatedMovie.DateReleased;
                     existingMovie.Duration = updatedMovie.Duration;
                     existingMovie.RentPrice = updatedMovie.RentPrice;
                     existingMovie.BuyPrice = updatedMovie.BuyPrice;
-                    existingMovie.TrailerUrl = updatedMovie.TrailerUrl ?? "";
-                    existingMovie.Director = string.IsNullOrEmpty(updatedMovie.Director) ? "" : string.Join(", ", updatedMovie.Director.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(d => d.Trim()));
-                    existingMovie.Actor = string.IsNullOrEmpty(updatedMovie.Actor) ? "" : string.Join(", ", updatedMovie.Actor.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(a => a.Trim()));
-                    existingMovie.Language = string.IsNullOrEmpty(updatedMovie.Language) ? "" : string.Join(", ", updatedMovie.Language.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(l => l.Trim()));
+                    existingMovie.TrailerUrl = updatedMovie.TrailerUrl ?? existingMovie.TrailerUrl;
+                    existingMovie.Director = updatedMovie.Director ?? existingMovie.Director;
+                    existingMovie.Actor = updatedMovie.Actor ?? existingMovie.Actor;
+                    existingMovie.Language = updatedMovie.Language ?? existingMovie.Language;
 
                     await dbContext.SaveChangesAsync();
                     return Results.Ok(existingMovie);
                 }).RequireAuthorization();
 
-                // DELETE deletes a specific movie (only by Admin)
                 app.MapDelete("/api/movies/{id}", async (ApplicationDbContext dbContext, int id, ClaimsPrincipal user) =>
                 {
                     if (!user.IsInRole("Admin"))
@@ -391,6 +384,55 @@ namespace movieShopApp.Server
                 Console.WriteLine($"Application failed to start: {ex.Message}");
                 throw;
             }
+        }
+    }
+
+    // Custom DateOnly model binder
+    public class DateOnlyModelBinder : IModelBinder
+    {
+        public Task BindModelAsync(ModelBindingContext bindingContext)
+        {
+            if (bindingContext == null)
+                throw new ArgumentNullException(nameof(bindingContext));
+
+            var valueProviderResult = bindingContext.ValueProvider.GetValue(bindingContext.ModelName);
+            if (valueProviderResult == ValueProviderResult.None)
+            {
+                return Task.CompletedTask;
+            }
+
+            var value = valueProviderResult.FirstValue;
+            if (string.IsNullOrEmpty(value))
+            {
+                return Task.CompletedTask;
+            }
+
+            if (DateOnly.TryParse(value, out var date))
+            {
+                bindingContext.Result = ModelBindingResult.Success(date);
+            }
+            else
+            {
+                bindingContext.ModelState.AddModelError(bindingContext.ModelName, "Invalid date format. Use YYYY-MM-DD.");
+            }
+
+            return Task.CompletedTask;
+        }
+    }
+
+    public class DateOnlyModelBinderProvider : IModelBinderProvider
+    {
+        public IModelBinder GetBinder(ModelBinderProviderContext context)
+        {
+            if (context == null)
+                throw new ArgumentNullException(nameof(context));
+
+            if (context.Metadata.ModelType == typeof(DateOnly))
+            {
+                return new BinderTypeModelBinder(typeof(DateOnlyModelBinder));
+            }
+
+            return null;
         }
     }
 

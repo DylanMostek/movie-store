@@ -12,7 +12,7 @@ using movieShopApp.Server.Data;
 namespace movieShopApp.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250418021813_Migrations")]
+    [Migration("20250507144303_Migrations")]
     partial class Migrations
     {
         /// <inheritdoc />
