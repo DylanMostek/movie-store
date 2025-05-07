@@ -10,7 +10,7 @@ function MovieList() {
             .then((data) => {
                 console.log("Movies fetched:", data);
                 data.forEach((movie) => {
-                    console.log(`Movie: ${movie.title}, ImageUrl: ${movie.imageUrl}`);
+                    console.log(`Movie: ${movie.title}, ImageUrl: ${movie.coverImageUrl}`);
                 });
                 setMovies(data);
             })
@@ -31,9 +31,9 @@ function MovieList() {
                             key={movie.id}
                             className="shadow-custom flex flex-col rounded-lg bg-white transition-transform hover:shadow-lg hover:-translate-y-1 dark:bg-movie-dark-800"
                         >
-                            <div className="h-98 w-full overflow-hidden rounded-t-lg p-2">
+                            <div className="h-full w-full overflow-hidden rounded-t-lg p-2">
                                 <img
-                                    src={movie.imageUrl} 
+                                    src={movie.coverImageUrl} 
                                     alt={movie.title}
                                     className="h-full w-full object-cover" 
                                 />
