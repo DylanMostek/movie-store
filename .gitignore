@@ -19,3 +19,4 @@ movieShopApp/movieShopApp.Server/wwwroot/index.html
 
 movieShopApp/movieShopApp.Server/appsettings.Development.json
 movieShopApp/movieShopApp.Server/appsettings.Development.json
+.DS_Store
