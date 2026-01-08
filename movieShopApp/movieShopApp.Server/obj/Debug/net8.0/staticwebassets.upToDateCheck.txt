@@ -1,6 +1,0 @@
-wwwroot\assets\HomePageImage-CYLRV0jS.png
-wwwroot\assets\index-BhMt_ns3.css
-wwwroot\assets\index-Cw9d1QtN.js
-wwwroot\assets\index-Cy59QQjo.js
-wwwroot\index.html
-wwwroot\vite.svg

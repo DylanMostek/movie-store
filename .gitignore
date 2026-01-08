@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# .NET
+bin/
+obj/
+
+# Env / secrets
+.env
+
+# Build outputs (SPA published into ASP.NET wwwroot)
+movieShopApp/movieShopApp.Server/wwwroot/assets/
+movieShopApp/movieShopApp.Server/wwwroot/index.html
+
+movieShopApp/movieShopApp.Server/appsettings.Development.json
+movieShopApp/movieShopApp.Server/appsettings.Development.json
