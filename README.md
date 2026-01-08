@@ -2,6 +2,10 @@
 
 A full-stack movie storefront built with **.NET 8 / ASP.NET Core** and a **SQL database** (via **Entity Framework Core**).  
 Includes a customer-facing experience (browse movies, cart, checkout) and admin functionality, plus **unit tests**.
+## Screenshots
+![Home](docs/screenshots/home.png)
+![Movies](docs/screenshots/movies.png)
+![Admin](docs/screenshots/admin.png)
 
 ## Tech Stack
 - **Backend:** C# / .NET 8 / ASP.NET Core
